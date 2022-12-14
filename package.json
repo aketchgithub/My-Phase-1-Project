@@ -1,0 +1,24 @@
+{
+  "name": "my-phase-1-project",
+  "version": "1.0.0",
+  "description": "Restaurant Menu-list App",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aketchgithub/My-Phase-1-Project.git"
+  },
+  "keywords": [
+    "JAVASCRIPT",
+    "HTML",
+    "CSS"
+  ],
+  "author": "Victor Aketch[@aketchgithub]",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aketchgithub/My-Phase-1-Project/issues"
+  },
+  "homepage": "https://github.com/aketchgithub/My-Phase-1-Project#readme"
+}
