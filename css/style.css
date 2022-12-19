@@ -9,11 +9,11 @@
     height: 100%;
 } 
 
-#img{
+.img-thumbnail{
     
-    height: max-content;
-    height: 350px;
+    height: 400px;
     display: inline-block;
+
 }
 
 

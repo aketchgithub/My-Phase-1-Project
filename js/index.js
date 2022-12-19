@@ -68,7 +68,7 @@ function renderFirstStr(str) {
     const img = document.getElementById('img')  
     img.innerHTML = `
     
-    <img src="${str.strCategoryThumb}" class="img-thumbnail" alt="...">`
+    <img src="${str.strCategoryThumb}"id="image"  class="img-thumbnail" alt="...">`
 
 }
 
@@ -99,7 +99,7 @@ function strMealCategories(){
                 console.log(menu.strCategory);
               const img = document.getElementById('img')  
               img.innerHTML = `
-              <img src="${menu.strCategoryThumb}" class="img-thumbnail" alt="...">
+              <img src="${menu.strCategoryThumb}"id="image"  class="img-thumbnail" alt="...">
                 `
                 const description = document.getElementById('descript')
                 description.innerHTML = `${menu.strCategoryDescription}`
@@ -124,11 +124,46 @@ function strMealCategories(){
     .then((resp) => resp.json())
     .then((item) => {
         // console.log(item)
+    item.meals.forEach(newItem => {
 
+        const img = document.getElementById('img')  
+              img.innerHTML = `
+              <img src="${newItem.strMealThumb}" id="image" class="img-thumbnail" alt="...">
+                `
+                const description = document.getElementById('descript')
+                description.innerHTML = `${newItem.strInstructions}`
+
+            const titleList = document.getElementById('titleList')
+            titleList.innerHTML = `
+            <p>CATEGORY: ${newItem.strCategory}</p>
+             <p>MEAL: ${newItem.strMeal}</p>
+            `
+            
+
+        // console.log(newItem)
         
-    })
+
+    // const newTitles = document.createElement('li')
+    // const titleList = document.getElementById('titleList')
+    // newTitles.innerHTML = `${newItem.titles}`
+    // newTitles.appendChild(titleList)
+
+    // const img = document.getElementById('img')  
+    // img.innerHTML = `
+    // <img src="${newItem.strCategoryThumb}" class="img-thumbnail" alt="...">`
 
 
+    // // titleList.appendChild(newItem)
+
+    //   const description = document.getElementById('descript')
+    //   description.innerHTML = `${newItem.strCategoryDescription}`
+    //   titleList.appendChild(newItem)
+
+     
+     })
+     
+
+})
  })
 
 
