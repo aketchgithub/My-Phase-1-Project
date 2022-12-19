@@ -102,19 +102,6 @@ function strMealCategories(){
     })
 }
  strMealCategories();
-// const strCategories = () => {
-    
-//     fetch("https://www.themealdb.com/api/json/v1/1/categories.php"
-//     )
-//     .then((resp) => resp.json())
-//     .then((str) => {
-//         console.log(str)
-//         str.categories.forEach(item => {
-//          console.log(item)
-
-//             let titles = document.createElement("li")
-//             titles.addEventListener('click', () =>{
-
 
 
 function updateMealSearch(obj) {
