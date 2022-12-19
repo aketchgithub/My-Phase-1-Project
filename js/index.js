@@ -20,7 +20,17 @@ document.addEventListener('DOMContentLoaded', (e) =>{
             containerFluid.style.display = "none"
             navbar.style.display = "none"
          })
-
+    const searchBtn = document.getElementById('btnSearch')
+    searchBtn.addEventListener('click', (e) =>{
+        e.preventDefault()
+        signIn.style.display = "none"
+        signUp.style.display = "none"
+        
+        containerFluid.removeAttribute('hidden')
+        containerFluid.style.display = 'flex'
+        navbar.removeAttribute('hidden')
+        navbar.style.display ='flex '
+    })
     const btnLogin = document.getElementById('btnLogin')
     btnLogin.addEventListener('click', (e) =>{
         e.preventDefault()
@@ -101,6 +111,25 @@ function strMealCategories(){
     })
 }
  strMealCategories();
+
+ //add a search function
+ 
+ const searchInput = document.getElementById('input')
+
+ searchBtn.addEventListener('click' , (e) => {
+    e.preventDefault
+    const userInput = searchInput.value
+    
+    fetch(`https://www.themealdb.com/api/json/v1/1/search.php?f=${userInput}`)
+    .then((resp) => resp.json())
+    .then((item) => {
+        // console.log(item)
+
+        
+    })
+
+
+ })
 
 
 function updateMealSearch(obj) {

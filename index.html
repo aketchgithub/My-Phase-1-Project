@@ -9,10 +9,10 @@
     <title>RESTAURANT MENU NAVIGATION APP</title>
 </head>
 <body>
-   <nav class="navbar bg-primary" id="navBar" hidden>
+   <nav class="navbar bg-info" id="navBar" hidden>
     <form class = "d-flex" role="search">
-        <input class ="form-control me-12" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <input class ="form-control me-12" id="input" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-secondary" id="btnSearch" type="submit">Search</button>
     </form>
    </div>
   </nav>
@@ -30,7 +30,7 @@
         </div>
 
         <div>
-        <button type="submit" class="bg-light" id="btnLogin">Login</button>
+        <button type="submit" class="bg-primary" id="btnLogin">Login</button>
         </div>
 
     </div>
@@ -59,7 +59,7 @@
       </div>
       <div>
 
-       <button type="submit" class="bg-light" id="btnSignUp">Register</button>
+       <button type="submit" class="bg-success" id="btnSignUp">Register</button>
 
        </div>
 
@@ -76,7 +76,7 @@
             Search</button> -->
           
           <h4 id="mealCategory" > MEAL CATEGORIES</h4>
-          <div class="col-4 bg-warning" > 
+          <div class="col-4 bg-info " > 
             <ul id="titleList"></ul>
           </div>
           <div class="col-4 bg-black" id="img">  
