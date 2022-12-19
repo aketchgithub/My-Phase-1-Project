@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', (e) =>{
         e.preventDefault()
         signIn.style.display = "none"
         signUp.style.display = "none"
-        // const containerFluid = document.getElementById('container')
+        
         containerFluid.removeAttribute('hidden')
         containerFluid.style.display = 'flex'
         navbar.removeAttribute('hidden')
@@ -59,7 +59,6 @@ function renderFirstStr(str) {
     img.innerHTML = `
     
     <img src="${str.strCategoryThumb}" class="img-thumbnail" alt="...">`
-
 
 }
 
@@ -105,6 +104,7 @@ function strMealCategories(){
 
 
 function updateMealSearch(obj) {
+
     fetch(`https://www.themealdb.com/api/json/v1/1/categories.php/${obj.id}`, {
         method: 'PATCH',
         headers: {
