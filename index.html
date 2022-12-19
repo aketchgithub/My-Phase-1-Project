@@ -9,18 +9,69 @@
     <title>RESTAURANT MENU NAVIGATION APP</title>
 </head>
 <body>
-   <center><h1>MENU</h1></center>
-   <nav class="navbar bg-primary">
+   <nav class="navbar bg-primary" id="navBar" hidden>
     <form class = "d-flex" role="search">
         <input class ="form-control me-12" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
    </div>
   </nav>
+
+  <div id="form" >
+    <div id="sign-in" hidden >
+       <form>
+        <div>
+            <label for="input email">Email</label>
+            <input type="email" placeholder="email">
+        </div>
+        <div>
+            <label for="input password">Password</label>
+            <input type="password" placeholder="password">
+        </div>
+
+        <div>
+        <button type="submit" class="bg-light" id="btnLogin">Login</button>
+        </div>
+
+    </div>
+     </form>
+
+
+    <div id="sign-up">
+        <form>
+        <div>
+            <label for="input surname">Surname</label>
+            <input type="surname" placeholder="Surname">
+        </div>
+        <div>
+            <label for="inputLastName">LastName</label>
+            <input type="text" placeholder="LastName">
+        </div>
+
+        <div>
+        <label for="input password">Password</label>
+            <input type="password" placeholder="password">
+       </div>
+
+      <div>
+        <label for="input email">Sign-up Email</label>
+            <input type="email" placeholder="Email">
+      </div>
+      <div>
+
+       <button type="submit" class="bg-light" id="btnSignUp">Register</button>
+
+       </div>
+
+    </form>
+    </div>
+  </div>
   
-        <div class="container-fluid bg-success"> 
+        <div class="container-fluid bg-success" id="container" hidden> 
             <div class="row">
           
+   
+         <center><h4> MENU</h4> </center>
         <!-- <button class="button" id="btn" type="submit">
             Search</button> -->
           
@@ -44,8 +95,8 @@
       </div>
 
      </div>
-     </div>
-     </div>
+           </div>
+     
     <script src="js/index.js"></script>
     <script src="js/bootstrap.js"></script>
     

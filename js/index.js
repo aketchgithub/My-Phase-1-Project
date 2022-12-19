@@ -1,6 +1,40 @@
 const url = "https://www.themealdb.com/api/json/v1/1/categories.php"
 
-document.addEventListener('DOMContentLoaded', () =>{
+document.addEventListener('DOMContentLoaded', (e) =>{
+    e.preventDefault()
+    const containerFluid = document.getElementById('container')
+
+    const navbar = document.getElementById('navBar')
+    
+    const signUp = document.getElementById('sign-up')
+   
+
+    const signIn = document.getElementById('sign-in')
+    
+    const btnSignUp = document.getElementById('btnSignUp')
+         btnSignUp.addEventListener('click', (e) => {
+            e.preventDefault()
+            signIn.style.display = "flex"
+            signIn.removeAttribute("hidden")
+            signUp.style.display = "none"
+            containerFluid.style.display = "none"
+            navbar.style.display = "none"
+         })
+
+    const btnLogin = document.getElementById('btnLogin')
+    btnLogin.addEventListener('click', (e) =>{
+        e.preventDefault()
+        signIn.style.display = "none"
+        signUp.style.display = "none"
+        // const containerFluid = document.getElementById('container')
+        containerFluid.removeAttribute('hidden')
+        containerFluid.style.display = 'flex'
+        navbar.removeAttribute('hidden')
+        navbar.style.display ='flex '
+
+    })
+
+    
     const fetchFirstStr = () => {
         fetch(url)
         .then(response => response.json())
