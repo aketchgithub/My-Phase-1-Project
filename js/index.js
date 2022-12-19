@@ -130,23 +130,7 @@ function strMealCategories(){
 // }
 // strCategories();
 
-// function renderStrCategories(str){
 
-//     let button = document.getElementById('button')
-//     button.innerHTML=""
-
-//     const strCategoryDescription = document.getElementById('descript')
-//     strCategoryDescription.innerText = str.strCategoryDescription
-
-//     const strCategory = document.getElementById('mealCategory')
-//     strCategory.innerText = str.strCategory
-
-//     const strCategoryThumb = document.getElementById('img')
-//     strCategoryThumb.src = str.strCategoryThumb
-
-
-
-// }
 
 function updateMealSearch(obj) {
     fetch(`https://www.themealdb.com/api/json/v1/1/categories.php/${obj.id}`, {
