@@ -115,21 +115,6 @@ function strMealCategories(){
 //             let titles = document.createElement("li")
 //             titles.addEventListener('click', () =>{
 
-//                 console.log("I was clicked")
-
-//                 const i= item.id
-//                 renderStrCategories(str.categories[i - 1])
-
-//             })
-//             titles.innerText = item.title
-//             let menuList = document.getElementById('mealCategory')
-//             menuList.appendChild(titles)
-//         })
-
-//     })
-// }
-// strCategories();
-
 
 
 function updateMealSearch(obj) {
