@@ -10,6 +10,19 @@ document.addEventListener('DOMContentLoaded', (e) =>{
    
 
     const signIn = document.getElementById('sign-in')
+    // const landingPage = document.getElementById('landingPage')
+    // const loginBtn = document.getElementById('btnLog')
+
+    // loginBtn.addEventListener('click', (e) =>{
+    //     //  console.log()
+    //  e.preventDefault
+    //  signIn.style.display = "none"
+    //     signUp.style.display = "flex"
+    //     signUp.removeAttribute("hidden")
+    //     landingPage.style.display = 'none'
+
+
+    // })
     
     const btnSignUp = document.getElementById('btnSignUp')
          btnSignUp.addEventListener('click', (e) => {
