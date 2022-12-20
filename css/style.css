@@ -78,5 +78,9 @@ input[type=password]:focus{
 #btnLogin:hover, #btnSignUp:hover{
     opacity: 1;
 }
-
+@media screen and (max-width: 350px) {
+    #btnLogin, #btnSignUp {
+        width:100%;
+    }
+}
 
