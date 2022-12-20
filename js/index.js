@@ -1,7 +1,11 @@
+//my base API for the project 
 const url = "https://www.themealdb.com/api/json/v1/1/categories.php"
 
+//add an eventListener and an event(e.preventDefault) to ensure the page does not refresh before loading content.
 document.addEventListener('DOMContentLoaded', (e) =>{
     e.preventDefault()
+
+    //landing page
     const containerFluid = document.getElementById('container')
 
     const navbar = document.getElementById('navBar')
@@ -23,7 +27,7 @@ document.addEventListener('DOMContentLoaded', (e) =>{
 
 
     // })
-    
+    // ensure our landing page only has a dummy authentication page
     const btnSignUp = document.getElementById('btnSignUp')
          btnSignUp.addEventListener('click', (e) => {
             e.preventDefault()
@@ -57,11 +61,11 @@ document.addEventListener('DOMContentLoaded', (e) =>{
 
     })
 
-    
+   //our fist str category 
     const fetchFirstStr = () => {
         fetch(url)
         .then(response => response.json())
-        .then(str => renderFirstStr(str.categories[0])
+        .then(str => renderFirstStr(str.categories[0]) // by default our page should display the first item category, image and description
         )
         // console.log(str)
 
@@ -84,7 +88,7 @@ function renderFirstStr(str) {
     <img src="${str.strCategoryThumb}"id="image"  class="img-thumbnail" alt="...">`
 
 }
-
+//fetch all the categories, the iterate through all of them
 const strCategories = () => {
     fetch(url)
     .then((resp) => resp.json())
@@ -101,6 +105,7 @@ const strCategories = () => {
 }
 strCategories()
 
+//create an li of the categories then add an eventListener click 
 function strMealCategories(){
     const titleList = document.getElementById('titleList')
     titleList.addEventListener('click', (e) => {
@@ -133,6 +138,9 @@ function strMealCategories(){
     e.preventDefault
     const userInput = searchInput.value
     
+
+    //search function by the first letter of the strCategory or strMeal
+
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?f=${userInput}`)
     .then((resp) => resp.json())
     .then((item) => {
@@ -154,12 +162,7 @@ function strMealCategories(){
             
 
         // console.log(newItem)
-        
-
-     
      })
-     
-
 })
  })
 
