@@ -156,22 +156,6 @@ function strMealCategories(){
         // console.log(newItem)
         
 
-    // const newTitles = document.createElement('li')
-    // const titleList = document.getElementById('titleList')
-    // newTitles.innerHTML = `${newItem.titles}`
-    // newTitles.appendChild(titleList)
-
-    // const img = document.getElementById('img')  
-    // img.innerHTML = `
-    // <img src="${newItem.strCategoryThumb}" class="img-thumbnail" alt="...">`
-
-
-    // // titleList.appendChild(newItem)
-
-    //   const description = document.getElementById('descript')
-    //   description.innerHTML = `${newItem.strCategoryDescription}`
-    //   titleList.appendChild(newItem)
-
      
      })
      
