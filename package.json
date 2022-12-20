@@ -4,7 +4,8 @@
   "description": "Restaurant Menu-list App",
   "main": "index.js",
   "scripts": {
-    "test": "start"
+    "test": "npm test",
+    "start": "npm run-serve"
   },
   "repository": {
     "type": "git",
