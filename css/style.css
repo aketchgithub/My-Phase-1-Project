@@ -65,4 +65,15 @@ input[type=password]:focus{
     outline: none;
 }
 
+#btnLogin, #btnSignUp{
+    background-color: #04AA6D;
+    color: whitesmoke;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+
 
